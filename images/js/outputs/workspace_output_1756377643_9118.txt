@@ -1,0 +1,20 @@
+[master (root-commit) b58cc3b] Initial commit: Complete Elite Motors luxury car dealership website
+ 18 files changed, 2823 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 about.html
+ create mode 100644 contact.html
+ create mode 100644 css/styles.css
+ create mode 100644 images/favicon.svg
+ create mode 100644 images/logo.svg
+ create mode 100644 index.html
+ create mode 100644 inventory.html
+ create mode 100644 js/back-to-top.js
+ create mode 100644 js/main.js
+ create mode 100644 outputs/workspace_output_1756375428_706.txt
+ create mode 100644 outputs/workspace_output_1756377605_5359.txt
+ create mode 100644 outputs/workspace_output_1756377614_3815.txt
+ create mode 100644 outputs/workspace_output_1756377624_4866.txt
+ create mode 100644 robots.txt
+ create mode 100644 services.html
+ create mode 100644 sitemap.xml
+ create mode 100644 todo.md

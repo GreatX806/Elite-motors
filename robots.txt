@@ -1,0 +1,12 @@
+# robots.txt for Elite Motors
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.elitemotors.com/sitemap.xml
+
+# Disallow specific directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/

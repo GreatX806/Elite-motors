@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <!-- Background shape -->
+  <rect width="200" height="60" fill="none"/>
+  
+  <!-- Text "Elite" -->
+  <text x="10" y="38" font-family="'Playfair Display', serif" font-size="30" font-weight="700" fill="#0f172a">
+    Elite
+  </text>
+  
+  <!-- Text "Motors" -->
+  <text x="85" y="38" font-family="'Playfair Display', serif" font-size="30" font-weight="700" fill="#c8a97e">
+    Motors
+  </text>
+  
+  <!-- Decorative line -->
+  <line x1="10" y1="45" x2="190" y2="45" stroke="#c8a97e" stroke-width="2"/>
+  
+  <!-- Car silhouette -->
+  <path d="M170,25 C175,20 180,20 185,25 L190,25 C192,25 194,27 194,29 L194,32 C194,34 192,36 190,36 L185,36 C180,41 175,41 170,36 L165,36 C163,36 161,34 161,32 L161,29 C161,27 163,25 165,25 L170,25 Z" fill="#0f172a"/>
+  
+  <!-- Wheels -->
+  <circle cx="170" cy="36" r="3" fill="#c8a97e"/>
+  <circle cx="185" cy="36" r="3" fill="#c8a97e"/>
+</svg>

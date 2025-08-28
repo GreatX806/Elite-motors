@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory | Elite Motors</title>
+    <meta name="description" content="Browse our exclusive collection of luxury and exotic vehicles at Elite Motors - featuring premium brands like Porsche, Ferrari, Bentley, and more.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Elite Motors Logo" height="50">
+                </a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="inventory.html" class="active">Inventory</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section style="background-image: url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center; height: 400px; position: relative; margin-top: 90px;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.7);"></div>
+        <div class="container" style="height: 100%; display: flex; align-items: center; position: relative; z-index: 1;">
+            <div>
+                <h1 style="color: var(--light); font-size: 3.5rem; margin-bottom: 20px;">Our Inventory</h1>
+                <p style="color: var(--light); font-size: 1.2rem; max-width: 600px;">Discover our curated collection of the world's most exceptional automobiles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Filter Section -->
+    <section style="padding-bottom: 0;">
+        <div class="container">
+            <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                <h2 style="margin-bottom: 20px; text-align: center;">Find Your Perfect Vehicle</h2>
+                <form style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                    <div class="form-group">
+                        <label for="brand" style="display: block; margin-bottom: 8px; font-weight: 500;">Brand</label>
+                        <select id="brand" class="form-control">
+                            <option value="">All Brands</option>
+                            <option value="porsche">Porsche</option>
+                            <option value="ferrari">Ferrari</option>
+                            <option value="bentley">Bentley</option>
+                            <option value="aston-martin">Aston Martin</option>
+                            <option value="lamborghini">Lamborghini</option>
+                            <option value="rolls-royce">Rolls-Royce</option>
+                            <option value="mercedes-benz">Mercedes-Benz</option>
+                            <option value="bmw">BMW</option>
+                            <option value="audi">Audi</option>
+                            <option value="maserati">Maserati</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="model" style="display: block; margin-bottom: 8px; font-weight: 500;">Model</label>
+                        <select id="model" class="form-control">
+                            <option value="">All Models</option>
+                            <option value="911">911</option>
+                            <option value="taycan">Taycan</option>
+                            <option value="roma">Roma</option>
+                            <option value="sf90">SF90 Stradale</option>
+                            <option value="continental">Continental GT</option>
+                            <option value="db12">DB12</option>
+                            <option value="huracan">Huracán</option>
+                            <option value="ghost">Ghost</option>
+                            <option value="s-class">S-Class</option>
+                            <option value="8-series">8 Series</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="year" style="display: block; margin-bottom: 8px; font-weight: 500;">Year</label>
+                        <select id="year" class="form-control">
+                            <option value="">All Years</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="older">2019 & Older</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="price" style="display: block; margin-bottom: 8px; font-weight: 500;">Price Range</label>
+                        <select id="price" class="form-control">
+                            <option value="">Any Price</option>
+                            <option value="100000">Under $100,000</option>
+                            <option value="200000">Under $200,000</option>
+                            <option value="300000">Under $300,000</option>
+                            <option value="500000">Under $500,000</option>
+                            <option value="1000000">Under $1,000,000</option>
+                            <option value="luxury">$1,000,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="body" style="display: block; margin-bottom: 8px; font-weight: 500;">Body Style</label>
+                        <select id="body" class="form-control">
+                            <option value="">All Body Styles</option>
+                            <option value="coupe">Coupe</option>
+                            <option value="convertible">Convertible</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="sports">Sports Car</option>
+                            <option value="gt">Grand Tourer</option>
+                        </select>
+                    </div>
+                    <div style="grid-column: 1 / -1; text-align: center; margin-top: 10px;">
+                        <button type="submit" class="btn" style="padding: 12px 40px;">Search Inventory</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Collections</h2>
+                <p>Explore our curated vehicle categories</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px;">
+                <a href="#new-arrivals" style="text-decoration: none;">
+                    <div style="position: relative; height: 200px; border-radius: 8px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="New Arrivals" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.6); display: flex; align-items: center; justify-content: center;">
+                            <h3 style="color: var(--light); font-size: 1.8rem; text-align: center;">New Arrivals</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#sports-cars" style="text-decoration: none;">
+                    <div style="position: relative; height: 200px; border-radius: 8px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Sports Cars" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.6); display: flex; align-items: center; justify-content: center;">
+                            <h3 style="color: var(--light); font-size: 1.8rem; text-align: center;">Sports Cars</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#luxury-sedans" style="text-decoration: none;">
+                    <div style="position: relative; height: 200px; border-radius: 8px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Sedans" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.6); display: flex; align-items: center; justify-content: center;">
+                            <h3 style="color: var(--light); font-size: 1.8rem; text-align: center;">Luxury Sedans</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section id="new-arrivals">
+        <div class="container">
+            <div class="section-title">
+                <h2>New Arrivals</h2>
+                <p>The latest additions to our exclusive collection</p>
+            </div>
+            <div class="inventory-grid">
+                <!-- Car 1 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ferrari Roma">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-title">Ferrari Roma</h3>
+                        <div class="car-price">$289,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                            <span><i class="fas fa-road"></i> 125 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <p style="margin-bottom: 15px;">The Ferrari Roma is a grand touring sports car with a twin-turbocharged V8 engine producing 612 horsepower. This example features Rosso Corsa exterior with Nero interior.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                <!-- Car 2 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80" alt="Mercedes-Benz S-Class">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-title">Mercedes-Benz S-Class</h3>
+                        <div class="car-price">$125,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                            <span><i class="fas fa-road"></i> 0 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                        </div>
+                        <p style="margin-bottom: 15px;">The flagship Mercedes-Benz S-Class represents the pinnacle of luxury and technology. This brand new model features Obsidian Black exterior with Macchiato Beige/Magma Grey interior.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                <!-- Car 3 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="Aston Martin DB12">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-title">Aston Martin DB12</h3>
+                        <div class="car-price">$248,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                            <span><i class="fas fa-road"></i> 350 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <p style="margin-bottom: 15px;">The Aston Martin DB12 combines breathtaking design with exceptional performance. This example features British Racing Green exterior with Obsidian Black leather interior.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports Cars Section -->
+    <section id="sports-cars" style="background-color: var(--subtle);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sports Cars</h2>
+                <p>Exceptional performance and driving dynamics</p>
+            </div>
+            <div class="inventory-grid">
+                <!-- Car 1 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Porsche 911 Turbo S">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-title">Porsche 911 Turbo S</h3>
+                        <div class="car-price">$215,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-road"></i> 1,200 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <p style="margin-bottom: 15px;">The Porsche 911 Turbo S delivers breathtaking performance with its 640 horsepower twin-turbo flat-six engine. This example features GT Silver Metallic exterior with Black/Bordeaux Red interior.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                <!-- Car 2 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Lamborghini Huracán EVO">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-title">Lamborghini Huracán EVO</h3>
+                        <div class="car-price">$295,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-road"></i> 2,800 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <p style="margin-bottom: 15px;">The Lamborghini Huracán EVO delivers exhilarating performance with its naturally aspirated V10 engine. This example features Verde Mantis exterior with Nero Ade interior.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                <!-- Car 3 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1555626906-fcf10d6851b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="McLaren 720S">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-title">McLaren 720S</h3>
+                        <div class="car-price">$275,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2022</span>
+                            <span><i class="fas fa-road"></i> 4,500 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <p style="margin-bottom: 15px;">The McLaren 720S offers extraordinary performance with its 710 horsepower twin-turbo V8 engine. This example features Azores Orange exterior with Carbon Black interior.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Sedans Section -->
+    <section id="luxury-sedans">
+        <div class="container">
+            <div class="section-title">
+                <h2>Luxury Sedans</h2>
+                <p>Uncompromising comfort and sophistication</p>
+            </div>
+            <div class="inventory-grid">
+                <!-- Car 1 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Bentley Flying Spur">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-title">Bentley Flying Spur</h3>
+                        <div class="car-price">$235,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-road"></i> 850 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <p style="margin-bottom: 15px;">The Bentley Flying Spur combines exquisite luxury with impressive performance. This example features Meteor Grey exterior with Linen and Brunel interior.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                <!-- Car 2 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1631294770257-a2e1e79b9ffd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rolls-Royce Ghost">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-title">Rolls-Royce Ghost</h3>
+                        <div class="car-price">$385,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-road"></i> 1,500 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <p style="margin-bottom: 15px;">The Rolls-Royce Ghost represents the pinnacle of automotive luxury. This example features Arctic White exterior with Seashell and Navy Blue interior.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                <!-- Car 3 -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Maserati Quattroporte">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-title">Maserati Quattroporte</h3>
+                        <div class="car-price">$145,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-road"></i> 950 miles</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <p style="margin-bottom: 15px;">The Maserati Quattroporte combines Italian elegance with exhilarating performance. This example features Blu Nobile exterior with Cuoio interior.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <section style="padding-top: 0;">
+        <div class="container" style="display: flex; justify-content: center;">
+            <div style="display: flex; gap: 10px;">
+                <a href="#" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background-color: var(--primary); color: var(--light); text-decoration: none;">1</a>
+                <a href="#" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background-color: var(--subtle); color: var(--dark); text-decoration: none;">2</a>
+                <a href="#" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background-color: var(--subtle); color: var(--dark); text-decoration: none;">3</a>
+                <span style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">...</span>
+                <a href="#" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background-color: var(--subtle); color: var(--dark); text-decoration: none;">8</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2083&q=80'); background-size: cover; background-position: center; position: relative; color: var(--light); text-align: center; padding: 100px 0;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 style="color: var(--light); font-size: 2.8rem; margin-bottom: 20px;">Can't Find What You're Looking For?</h2>
+            <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.2rem;">Our vehicle acquisition specialists can source any specific make, model, or configuration to meet your exact requirements.</p>
+            <a href="contact.html" class="btn" style="padding: 15px 40px; font-size: 1.1rem;">Request a Vehicle</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h1 style="color: var(--light); margin-bottom: 20px;">Elite <span style="color: var(--secondary);">Motors</span></h1>
+                    <p>Elite Motors is the premier destination for luxury and exotic automobiles, offering an unparalleled selection of the world's finest vehicles and personalized service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="inventory.html">Inventory</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Services</h3>
+                    <ul>
+                        <li><a href="services.html">Vehicle Acquisition</a></li>
+                        <li><a href="services.html">Premium Maintenance</a></li>
+                        <li><a href="services.html">Detailing Services</a></li>
+                        <li><a href="services.html">Vehicle Customization</a></li>
+                        <li><a href="services.html">Concierge Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--secondary); margin-right: 10px;"></i> 123 Luxury Lane, Beverly Hills, CA 90210</li>
+                        <li><i class="fas fa-phone" style="color: var(--secondary); margin-right: 10px;"></i> (800) ELITE-MOTORS</li>
+                        <li><i class="fas fa-envelope" style="color: var(--secondary); margin-right: 10px;"></i> info@elitemotors.com</li>
+                        <li><i class="fas fa-clock" style="color: var(--secondary); margin-right: 10px;"></i> Mon-Sat: 9:00 AM - 7:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elite Motors. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/back-to-top.js"></script>
+</body>
+</html>

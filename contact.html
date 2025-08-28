@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Elite Motors</title>
+    <meta name="description" content="Get in touch with Elite Motors - Contact our luxury car dealership for inquiries about our inventory, services, or to schedule a consultation.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Elite Motors Logo" height="50">
+                </a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section style="background-image: url('https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80'); background-size: cover; background-position: center; height: 400px; position: relative; margin-top: 90px;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.7);"></div>
+        <div class="container" style="height: 100%; display: flex; align-items: center; position: relative; z-index: 1;">
+            <div>
+                <h1 style="color: var(--light); font-size: 3.5rem; margin-bottom: 20px;">Contact Us</h1>
+                <p style="color: var(--light); font-size: 1.2rem; max-width: 600px;">We're here to assist you with any inquiries about our vehicles, services, or to schedule a personalized consultation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>We look forward to hearing from you</p>
+            </div>
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Address</h4>
+                            <p>123 Luxury Lane<br>Beverly Hills, CA 90210<br>United States</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>Sales: (800) ELITE-MOTORS<br>Service: (800) 123-4567<br>International: +1 310-555-1234</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>Sales: sales@elitemotors.com<br>Service: service@elitemotors.com<br>General: info@elitemotors.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 7:00 PM<br>Saturday: 10:00 AM - 6:00 PM<br>Sunday: By Appointment Only</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        <h4 style="color: var(--light); margin-bottom: 15px;">Connect With Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address*</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject*</label>
+                            <select id="subject" class="form-control" required>
+                                <option value="">Select a subject</option>
+                                <option value="sales">Vehicle Inquiry</option>
+                                <option value="service">Service Appointment</option>
+                                <option value="parts">Parts Inquiry</option>
+                                <option value="acquisition">Vehicle Acquisition</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group" style="display: flex; align-items: center;">
+                            <input type="checkbox" id="newsletter" style="width: auto; margin-right: 10px;">
+                            <label for="newsletter" style="margin: 0;">Subscribe to our newsletter for exclusive updates and offers</label>
+                        </div>
+                        <div class="form-group" style="margin-top: 20px;">
+                            <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section style="padding-top: 0;">
+        <div class="container">
+            <div style="width: 100%; height: 450px; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26430.393553120906!2d-118.43209866215456!3d34.07739795810843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d147ab%3A0xd6c7c379fd081ed1!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1659123456789!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="background-color: var(--subtle);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Answers to common inquiries</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); gap: 30px;">
+                <!-- FAQ Item 1 -->
+                <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                    <h3 style="margin-bottom: 15px; font-size: 1.3rem;">Do you offer financing options?</h3>
+                    <p>Yes, we offer a range of financing solutions tailored to your specific needs. Our finance specialists work with premier financial institutions to secure competitive rates and flexible terms for our clients.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                    <h3 style="margin-bottom: 15px; font-size: 1.3rem;">Can you source a specific vehicle that's not in your inventory?</h3>
+                    <p>Absolutely. Our global acquisition network allows us to source specific vehicles based on your exact requirements. Contact our acquisition specialists to discuss your desired make, model, and specifications.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                    <h3 style="margin-bottom: 15px; font-size: 1.3rem;">Do you accept trade-ins?</h3>
+                    <p>Yes, we welcome trade-ins and offer fair market valuations for your current vehicle. Our appraisal process is transparent and designed to maximize the value of your trade-in.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                    <h3 style="margin-bottom: 15px; font-size: 1.3rem;">Can I schedule a test drive?</h3>
+                    <p>We encourage test drives of our vehicles. You can schedule an appointment through our website, by phone, or by visiting our showroom. For certain high-performance or rare vehicles, additional arrangements may be required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background-image: url('https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2036&q=80'); background-size: cover; background-position: center; position: relative; color: var(--light); text-align: center; padding: 100px 0;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8);"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 style="color: var(--light); font-size: 2.8rem; margin-bottom: 20px;">Visit Our Showroom</h2>
+            <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.2rem;">Experience our exceptional collection of luxury vehicles in person. Our showroom offers a sophisticated environment where you can explore your options with the guidance of our knowledgeable specialists.</p>
+            <div>
+                <a href="#" class="btn" style="margin-right: 15px;">Schedule a Visit</a>
+                <a href="inventory.html" class="btn btn-outline">View Inventory</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h1 style="color: var(--light); margin-bottom: 20px;">Elite <span style="color: var(--secondary);">Motors</span></h1>
+                    <p>Elite Motors is the premier destination for luxury and exotic automobiles, offering an unparalleled selection of the world's finest vehicles and personalized service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="inventory.html">Inventory</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Services</h3>
+                    <ul>
+                        <li><a href="services.html">Vehicle Acquisition</a></li>
+                        <li><a href="services.html">Premium Maintenance</a></li>
+                        <li><a href="services.html">Detailing Services</a></li>
+                        <li><a href="services.html">Vehicle Customization</a></li>
+                        <li><a href="services.html">Concierge Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--secondary); margin-right: 10px;"></i> 123 Luxury Lane, Beverly Hills, CA 90210</li>
+                        <li><i class="fas fa-phone" style="color: var(--secondary); margin-right: 10px;"></i> (800) ELITE-MOTORS</li>
+                        <li><i class="fas fa-envelope" style="color: var(--secondary); margin-right: 10px;"></i> info@elitemotors.com</li>
+                        <li><i class="fas fa-clock" style="color: var(--secondary); margin-right: 10px;"></i> Mon-Sat: 9:00 AM - 7:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elite Motors. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/back-to-top.js"></script>
+</body>
+</html>
